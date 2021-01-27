@@ -34,6 +34,8 @@ soal = input("Masukkan nama file lengkap dengan direktorinya: ")
 
 f = open(soal, "r")
 isi = f.read()
+
+start = time()  # Mulai hitung waktu
 data = isi.split("\n")
 idxMax = len(data) - 1
 data.pop(idxMax - 1)
@@ -45,7 +47,6 @@ for i in range(idxMax):
     
 f.close()
 
-start = time()  # Mulai hitung waktu
 
 angka = list(range(10))   #Kemungkinan angka: 0-9
 
